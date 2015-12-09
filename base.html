@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Nitramask - the best place to ask Nitram</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Loading Bootstrap -->
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <!-- Loading Flat UI -->
+        <link href="css/flat-ui.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+        <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <nav class="navbar navbar-default navbar-lg" role="navigation">
+
+                    <div class="c ollapse navbar-collapse" id="#navbar-collapse-02">
+                        <div class="navbar-header">
+                            <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-02"> -->
+                                <!-- <span class="sr-only">Toggle navigation</span> -->
+                            <!-- </button> -->
+                            <a class="navbar-brand" href="#"><span class="fui-flat">NitramAsk</span></a>
+                        </div>
+                        <!-- <ul class="nav navbar-nav">               
+                            <li><a href="#">Messages<span class="navbar-unread">1</span></a></li>
+                            <li class="active"><a href="#">About Us</a></li>
+                            <li><a href="#">Clients</a></li>  
+                        </ul> -->  
+                        <div class="new-question">
+                            <a href="#fakelink" class="btn btn-md btn-primary"><span class="fui-plus-inverted"></span>New question</a>
+                        </div> 
+                        <ul class="nav navbar-nav navbar-right nav-account">
+                            <li class="dropdown">
+                                <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown">MonsterCritic <b class="caret"></b></a> -->
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Martin <b class="fui-gear"></b></a>
+                                <span class="dropdown-arrow"></span>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Profile<span class="fui-user"></span></a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Logout<span class="fui-exit"></span></a></li>
+                                </ul>
+                            </li>
+                            <!-- <li><a href="#"><span class="visible-sm visible-xs">Settings<span class="fui-gear"></span></span><span class="visible-md visible-lg"><span class="fui-gear"></span></span></a></li> -->
+                        </ul>
+                        <form class="navbar-form navbar-right navbar__search" action="#" role="search">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input class="form-control" id="navbarInput-01" type="search" placeholder="Search">
+                                    <span class="input-group-btn">
+                                        <button type="submit" class="btn"><span class="fui-search"></span></button>
+                                    </span>            
+                                </div>
+                            </div>               
+                        </form>                        
+                    </div>
+                </nav>        
+            </header>
+        </div>
+            <section class="content">
+
+            </section>
+            <footer class="bottom-menu footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="footer__text">Nitramask - the bast place to ask Nitram!</p>
+                            <p class="footer__text">2015</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        <!-- </div> -->
+<!--         <div class="input-group">
+            <input type="search" class="form-control" placeholder="Search" id="search-query-1" style="/* border: 1px #969696 solid; */">
+            <span class="input-group-btn">
+                <button type="submit" class="btn"><span class="fui-search"></span></button>
+            </span>
+        </div> -->
+
+        <!-- Load JS here for greater good =============================-->
+        <script src="js/jquery-1.8.3.min.js"></script>
+        <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+        <script src="js/jquery.ui.touch-punch.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap-select.js"></script>
+        <script src="js/bootstrap-switch.js"></script>
+        <script src="js/flatui-checkbox.js"></script>
+        <script src="js/flatui-radio.js"></script>
+        <script src="js/holder.js"></script>
+        <script src="js/flatui-fileinput.js"></script>
+        <script src="js/jquery.tagsinput.js"></script>
+        <script src="js/jquery.placeholder.js"></script>
+        <script src="js/typeahead.js"></script>
+        <script src="js/application.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $(".answers__number h6").click(function() {
+                    var answer = $(this).parent().children(".answers__element");
+                    if (answer.css("display") !== "none") {
+                        answer.slideUp("slow");
+                        // answer.css("display", "none");
+                    } else {
+                        answer.slideDown("medium");
+                        // answer.css("display", "block");
+                    }
+                });                
+            });
+        </script>
+    </body>
+</html>
